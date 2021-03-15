@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> GEOG 678 Assignments </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2 style="color:#4169E1;">GIS Coursework</h2>
+</div>
+
+<div id="navbar">
+  <a class="active" href="#GEOG679">GEOG 678</a>
+  <a href="#">GEOG #</a>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<div class="horizontal-menu">
+  <a href="Coursework.html">Assignment 1</a>
+  <a href="Assignment2.html">Assignment 2</a>
+  <a href="Assignment3.html">Assignment 3</a>
+  <a href="Assignment4.html">Assignment 4</a>
+  <a href="#"class="active">Assignment 5</a>
+</div>
+
+<div class="content">
+    <h2>Embedded ArcGIS Online Maps</h2>
+    <p>Geog 678 Geovisualization and Web GIS</p>
+    <p>Date: March 16, 2021</p>
+</div>
+<div class="content" align="center">
+    <p style="color:#4169E1">Part 1: Jen and Barry Web Map</p>
+    <p><a href="https://emich.maps.arcgis.com/apps/Embed/index.html?webmap=724a309b6a154340bcf74e43c845e04a&extent=-79.5703,39.6058,-75.2362,41.4758&zoom=true&previewImage=true&scale=true&legendlayers=true&basemap_toggle=true&alt_basemap=topo&disable_scroll=true&theme=light" style="color:#0000FF;text-align:right" target="_blank">
+    (view larger map)</a></p>
+    <iframe style="width:70%;" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Jen and Barry-Trupti Lokhande" src="https://emich.maps.arcgis.com/apps/Embed/index.html?webmap=724a309b6a154340bcf74e43c845e04a&extent=-81.9312,38.5022,-73.263,42.25&home=true&level=8&zoom=true&previewImage=false&scale=true&details=true&legendlayers=true&active_panel=details&disable_scroll=false&theme=light">
+    </iframe>
+</div>
+<div class="content">
+    <p style="color:#4169E1">Part 2: Median House Prices Heat Map</p>
+    <p><a href="lab5b.html">Click here to go to heat map</a></p>
+</div>
+</body>
+</html>

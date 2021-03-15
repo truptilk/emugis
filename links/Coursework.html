@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> GEOG 678 Assignments </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2 style="color:#4169E1;">GIS Coursework</h2>
+</div>
+
+<div id="navbar">
+  <a class="active" href="#GEOG679">GEOG 678</a>
+  <a href="#">GEOG #</a>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<div class="horizontal-menu">
+  <a href="#Assignment1" class="active">Assignment 1</a>
+  <a href="Assignment2.html">Assignment 2</a>
+  <a href="Assignment3.html">Assignment 3</a>
+  <a href="Assignment4.html">Assignment 4</a>
+  <a href="Assignment5.html">Assignment 5</a>
+</div>
+
+<div class="content">
+    <h2>Spatial Data Analysis in R (I)</h2>
+    <p>Geog 678 Geovisualization and Web GIS</p>
+    <p>Date: January 29, 2021</p>
+
+    <object width="100%" height="650" type="application/pdf" data="..\docs\lab1.pdf#zoom=85&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content" style="pointer-events: none;" border="1"></object>
+</div>
+</body>
+</html>

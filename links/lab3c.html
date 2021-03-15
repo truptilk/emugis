@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Geog 678 - Assignment 3(3)</title>
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		.container{
+		margin:auto;
+		width: 80%;
+		text-align: justify;
+		}
+		.subhead h2 {
+		font-size: 30px;
+		text-align: center;
+		}
+		.footer {
+		font-size: 28px;
+		background-color: #f1f1f1;
+		padding: 5px;
+		text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h2 style="color:#4169E1;">GIS Coursework</h2>
+	</div>
+
+	<div id="navbar">
+		<a class="active" href="#GEOG678">GEOG 678</a>
+	</div>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+					navbar.classList.remove("sticky");
+				}
+		}
+	</script>
+
+<div class="horizontal-menu">
+<a href="Coursework.html">Assignment 1</a>
+<a href="Assignment2.html">Assignment 2</a>
+<a href="Assignment3.html"class="active">Assignment 3</a>
+<a href="Assignment4.html">Assignment 4</a>
+<a href="lab5b.html">Assignment 5</a>
+</div>
+
+<div class="container">
+	<div class="subhead">
+		<h2> A Reflection Report on Open vs. Proprietary</h2>
+	</div>
+
+	<h3><a href="#highlights">Check Highlights</a></h3>
+	<iframe width="70%" height="400px" src="https://www.youtube.com/embed/jUgiG6eaYtI"></iframe>
+
+	<h3>Open Source Software vs. Proprietary Software </h3>
+	<img src="..\images\pr7.png" width="70%">
+
+	<p><i>Which of Ramsey's observations about FOSS and proprietary software have you
+	observed in your own home or workplace (does not have to be GIS related)?
+	Or, if you don't think Ramsey's observations are legitimate, justify why.</i></p>
+
+	<p>In his presentation, Paul Ramsey has emphasized five managerial reasons to consider using an Open Source Software. These are –</p>
+
+	<ol type="1">
+	<li>Cloud readiness</li>
+	<li>Lack of license liability </li>
+	<li>Flexibility</li>
+	<li>Staff development and recruitment</li>
+	<li>Market power</li>
+	</ol>
+	<p>I have observed several scenarios at my workplace and academic career where Ramsey’s arguments hold good.</p>
+	<p>
+	Definitely, Startups recognize the value of having free and open source software (FOSS)
+	options available which minimizes their initial investment of purchasing a software license
+	to a huge extent. And having the capability to customize or modify the software as per the
+	requirement proves to be very helpful. That said, I have worked at a well-established,
+	one of the largest multinational IT company, even they used to use FOSS such as OpenOffice,
+	Zimbra, etc. back in 2013.
+	</p>
+	<p>
+	For personal project works, purchasing a proprietary software license is very costly as
+	well as it holds a legal liability. I strongly support FOSS because in such cases software like QGIS, Python, etc.
+	provides us almost all functionalities that a proprietary software would provide;
+	and also, one does not have to worry about publication or distribution of his/her work.
+	</p>
+	<p>
+	Although the other reasons namely flexibility, staff development, cloud readiness, are true,
+	they are not strong arguments to switch from proprietary to FOSS. At my previous workplace,
+	the organization had a sophisticated, customized extension built on top of ArcGIS for pipeline integrity management;
+	and our team was working on developing a custom web application for health safety environment (HSE) monitoring using ESRI products.
+	Thus, I think that proprietary software also provides flexibility, staff development and cloud readiness.
+	In addition to that, the vendors also provide full technical support.
+	</p>
+	<p>
+	To me, all these scenarios point to one major benefit of having FOSS which is cost-effectiveness.
+	However, that too can have one drawback; using a FOSS may not be cost-effective in terms of time.
+	As a developer one might require to invest time in developing a software as per the project requirement;
+	while as a user, one might require to put lot of efforts and time in learning the software on their own.
+	</p>
+
+	<p><i>After studying this lesson, would you advocate the use of a pure FOSS approach for your GIS work,
+	or are there certain elements of proprietary software that you would retain as part of a hybrid approach?</i></p>
+
+	<p>
+	After reading the reference articles provided in this assignment + the example given by Paul Ramsey on hybrid approach adopted by Pierce County, Washington +
+	my academic coursework where I have used ArcGIS, QGIS, PostgreSQL, Python and various libraries in R,
+	I would advocate a hybrid approach because having a proprietary software makes life easy and FOSS software provides freedom to use, modify and redistribute.
+	</p>
+	<p> Resources: <span><a href="https://www.esri.com/news/arcnews/spring11articles/open-source-technology-and-esri.html" target="_blank">Open Source Technology and ESRI</a><span>,
+	<span><a href="https://www.esri.com/arcgis-blog/products/constituent-engagement/constituent-engagement/building-the-forest-atlases-with-open-data-and-open-source/" target="_blank">Andrew Turner’s blog on Going Open Source with ESRI</a><span>
+	</p>
+
+	<center>
+	<p id="highlights">Highlights from the presentation by Paul Ramsey
+	<span><a href="https://www.youtube.com/watch?v=jUgiG6eaYtI&feature=youtu.be" target="_blank" style="font-size:10px">source</a>
+	</span></p></center>
+
+	<center><img src="..\images\pr8.png" width="70%"></center>
+</div>
+<div class="footer">
+	<a href="Assignment3.html">Back to Assignment 3 Main Page</p>
+</div>
+</body>
+</html>
