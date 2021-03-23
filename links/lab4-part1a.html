@@ -3,35 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Screenshots of css tutorials completed on w3schools webpage">
-
+	<link rel="stylesheet" href="stylelab3b.css">
 	<title>Assignment 4 - Part 1</title>
-
-
-	<style>
-	body {background: #f1f1f1;}
-		.orient {
-		  text-align: center;
-		}
-
-		.orient h1 {
-		  font-size: 40px;
-		  background-color: #8db600;
-			position: sticky;
-			top: 0;
-		}
-
-		.orient h2 {
-			font-size: 30px;
-		}
-
-
-	</style>
 </head>
 
 <body>
+	<div class="header">
+		<h2 style="color:#4169E1;">GIS Coursework</h2>
+	</div>
+	<div id="navbar">
+		<a class="active" href="#">GEOG 678</a>
+	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+	<div class="horizontal-menu">
+		<a href="Cooursework.html">Assignment 1</a>
+		<a href="Assignment2.html">Assignment 2</a>
+		<a href="Assignment3.html">Assignment 3</a>
+		<a href="Assignment4.html"class="active">Assignment 4</a>
+		<a href="Assignment5.html">Assignment 5</a>
+		<a href="Assignment6.html">Assignment 6</a>
+	</div>
 	<div class="orient">
-		<h1>Assignment 4 – CSS and JavaScript - Part 1.1</h1>
-		<p>w3schools.com Exercises</p>
+		<p>w3schools.com CSS Exercises</p>
 		<h2>1.	CSS Color and Text Align</h2>
 		<img src="../images/css1.JPG" style="width:60%">
 		<p><a href="https://www.w3schools.com/code/tryit.asp?filename=GO6CVRHI1A9N">Try this code</a></p>
@@ -64,6 +68,9 @@
 		<img src="../images/css8.JPG" style="width:60%">
 		<p><a href="https://www.w3schools.com/code/tryit.asp?filename=GO73KEKIGMA0">Try this code</a></p>
 
+	</div>
+	<div class="footer">
+		<a href="Assignment4.html">Back to Assignment 4 Main Page</p>
 	</div>
 
 </body>
