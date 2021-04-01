@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+<title> GEOG 678 Seminar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2 style="color:#4169E1;">GIS Coursework</h2>
+</div>
+
+<div id="navbar">
+  <a class="active" href="#GEOG678">GEOG 678</a>
+  <a href="../index.html"><i class="fas fa-home"></i></a>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+<div class="horizontal-menu">
+  <a href="Coursework.html">Assignment 1</a>
+  <a href="Assignment2.html">Assignment 2</a>
+  <a href="Assignment3.html">Assignment 3</a>
+  <a href="Assignment4.html">Assignment 4</a>
+  <a href="Assignment5.html">Assignment 5</a>
+  <a href="Assignment6.html">Assignment 6</a>
+  <a href="Assignment7.html">Assignment 7</a>
+  <a href="seminar.html" class="active">Seminar</a>
+  <a href="project.html">Project</a>
+</div>
+
+<div class="content">
+    <h2>Student-led Seminar: Drones and GIS</h2>
+    <p>Geog 678 Geovisualization and Web GIS</p>
+    <p>Date: April 06, 2021</p>
+</div>
+<div class="content" align="center">
+    <p><a href="https://arcg.is/1nyaKW0" target="_blank">Go to ArcGIS StoryMaps</a></p>
+    <iframe src="https://storymaps.arcgis.com/stories/dadb8c4fc372434787b4221e0b5f0d7d?header"
+    width="100%" height="600px" frameborder="1" allowfullscreen allow="geolocation"></iframe>
+
+</div>
+</body>
+</html>
