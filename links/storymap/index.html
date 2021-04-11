@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bali and Gili Islands</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--leaflet css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- scrolldown arrow, home, links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="img/favicon3.ico" type="image/x-icon">
+
+    <!-- facebook, github,icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+    <link rel="stylesheet" type="text/css" href="css/storymap.2.5.css">
+
+    <!--add required libraries-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!--leaflet.ajax for asynchronously adding geojson data-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--boostrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--story map plugin-->
+    <script src="js/storymap.2.5.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark storymap-navbar">
+    <a class="navbar-brand" href="#">Bali and Gili Islands, Indonesia </a>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+        <!--Create class ml-auto for the navbar items you want on the right.-->
+        <ul class="navbar-nav ml-auto"></ul>
+    </div>
+</nav>
+
+<div id="storymap" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 storymap-story">
+          <section data-scene="overview" data-background="assets/video.mp4">
+              <div class="fullscreen text-center">
+                  <h1 class="display-4 d-flex justify-content-center">The Islands of Indonesia</h1>
+                  <h3 class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">Explore the scenic places of Bali and Gili Islands
+                  </h3>
+              </div>
+          </section>
+            <section  data-scene="scene1">
+                <h2>Indonesia</h2>
+                <h4>The world's largest island country - <a href="https://youtu.be/Z9CsuNMdvLg" target="_blank">Indonesia</a>, is situated between the Indian and Pacific oceans. With more than 17,000 islands, Indonesia is a home to more than 270 million people and is the world's third largest democracy.</h4>
+                <br>
+                <h4>This largest country in southeast Asia offers a diverse set of experiences with its rich cultural heritage, biodiversity and beautiful landscapes.</h4>
+                <p><u><a href="https://en.wikipedia.org/wiki/Indonesia">wikipedia</a></u></p>
+
+            </section>
+            <section  data-scene="scene2">
+                <h2>Bali</h2>
+                <h4>Bali is the most popular tourist destination in Indonesia. It is famous for it's beautiful beaches, surfing spots, rice terraces, art and culture.</h4>
+                <br>
+                <h4>Bali is known as the island of thousand temples. Though most of the temples allow only Balinese to enter their spiritual places,
+                  there are few religious places that allow tourist visits with appropriate attire <i>sarong</i>.</h4>
+            </section>
+            <section  data-scene="scene6">
+                <h2><center>Tanah Lot</center></h2>
+                <img src="../../img/tanahlot.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Tanah Lot">
+                <p>Image Credits:<a href="https://commons.wikimedia.org/wiki/File:TanahLot_2014.JPG" target="_blank">Grayswoodsurrey</a></p>
+                <br>
+                <img src="../../img/tanahlot1.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Rainy day at Tanah Lot">
+                <p>Image Credits:Trupti</p>
+            </section>
+            <section  data-scene="scene7">
+              <h2><center>Uluwatu Temple</center></h2>
+              <img src="../../img/Cliff.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Cliff at Uluwatu Temple">
+              <p><b>Uluwatu Temple</b> Image Credits:<a href="https://commons.wikimedia.org/wiki/File:Cliff_at_Uluwatu_temple,_Bali.jpg" target="_blank">Emasami</a></p>
+            <br>
+              <img src="../../img/Kecak.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Uluwatu Kecak and Fire Dance">
+              <p><b>Kecak Dance Performance</b> Image Credits:<a href="https://commons.wikimedia.org/wiki/File:Kecak_dancers,_Uluwatu,_Bali.JPG" target="_blank">Carfiend</a></p>
+            <br>
+              <img src="../../img/clifftemple.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Uluwatu Temple">
+              <p><b></b> Image Credits:Trupti</p>
+            </section>
+            <section  data-scene="scene8">
+              <h2><center>Lempuyang Temple</center></h2>
+
+              <h4><b>Pura Lempuyang Luhur</b> is one of the oldest and holiest religious places in Bali.</h4>
+              <h4>For spiritual reasons, again, foreigners are not allowed to enter the main temple situated at the peak (around 3850 feet above sea level) of Mount Lempuyang.
+              But it's <b>worth hiking the mountain for the mesmerizing view of the Mount Agung! </b></h4>
+              <h4>On spiritual note, it is believed by the locals that only the sincere and respectful one with good heart make it to the top.</h4>
+              <br>
+              <img src="../../img/agung.jpg" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Mount Agung view from Lempuyang Temple">
+              <p><b>View of Mount Agung from Mount Lempuyang</b> Image Credits:Trupti</p>
+              <br>
+              <img src="../../img/lempuyang2.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Pura Lempuyang Temple">
+              <p><b>Pura Lempuyang Temple</b> Image Credits:Rupesh</p>
+              <br>
+              <img src="../../img/lempuyang.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Pura Lempuyang Temple">
+              <p><b>Pura Lempuyang Temple</b> Image Credits:Rupesh</p>
+            </section>
+            <section  data-scene="scene3">
+                <h2>Gili Islands</h2>
+                <h4>Gili Islands is a group of 3 small islands - <b>Gili Trawangan</b>, also known as Gili T, <b>Gili Meno</b> is the smallest of the three, and the third island is - <b>Gili Air</b>.</h4>
+                <br>
+
+                <img src="../../img/gili3.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Gili Islands">
+                <p>Image Credits:Rupesh</p>
+                <br>
+                <img src="../../img/gili2.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Gili Islands">
+                <p>Image Credits:Trupti</p>
+                <br>
+                <img src="../../img/gili1.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Gili Islands">
+                <p>Image Credits:Rupesh</p>
+                <br>
+
+                <h4>With beautiful beaches all around, these islands are also famous for snorkelling and scuba diving.</h4>
+                <br>
+                <img src="../../img/manta.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="manta ray">
+                <p><b>Manta Ray</b> Image Credits:<a href="https://commons.wikimedia.org/wiki/File:Manta_birostris-Thailand3.jpg" target="_blank">Jon Hanson</a></p>
+                <br>
+                <img src="../../img/jason.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Sculpture under the ocean, Gili Meno">
+                <p><a href="https://www.wanderingeducators.com/best/traveling/underwater-sculpture-rises-from-seabed-indonesia.html" target="_blank">Photo courtesy and copyright</a> <a href="https://www.underwatersculpture.com/projects/nest/" target="_blank">Jason deCaires Taylor.</a></p>
+            </section>
+            <section  data-scene="scene4">
+                <h2>Adventures</h2>
+                <h4> Well, there's lot of adventurous things to do on these islands - surfing in Uluwatu, scuba diving, snorkelling, huge swing rides and lot many water sports.</h4>
+                <h4> The most unique one is hiking the <a href="https://youtu.be/VNGUdObDoLk" target="_blank">volcanic mountains</a> like Mount Batur and Mount Agung.</h4>
+                <br>
+                <img src="../../img/sunrise.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Mount Batur Sunrise Trek">
+                <p><b>Mount Batur Sunrise Trek</b> Image Credits:Rupesh</p>
+                <br>
+                <img src="../../img/batur.JPG" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Mount Batur Sunrise Trek">
+                <p><b>View from Mount Batur Sumit</b> Image Credits:Trupti</p>
+            </section>
+            <section data-scene="end" data-background="../../img/terrace.jpg">
+                <div class="fullscreen text-center">
+                  <h1></h1>
+                  <h2 class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">There's a lot more these islands have to offer.</h2>
+                  <h2 class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95);background-color:DodgerBlue;">It's a never-ending adventure here!</h2>
+                </div>
+            </section>
+        </div>
+        <div class="col-sm-6 col-md-8 storymap-map"></div>
+    </div>
+    <ul>
+        <li>
+            <!--facebook icon-->
+            <a class="fab fa-facebook-square btn"
+               href="https://facebook.com/sharer.php?u=https://truptilk.github.io/emugis/links/storymap/index.html" style="top:40px"
+               target="_blank"></a>
+        </li>
+        <li>
+            <!--facebook icon-->
+            <a class="fab fa-github btn" href="https://github.com/truptilk/emugis/storymap" style="top:60px"
+               target="_blank"></a>
+        </li>
+        <li>
+            <!--info icon-->
+            <i class="fas fa-info-circle btn" style="top:80px" data-toggle="modal" data-target="#info-modal"></i>
+        </li>
+    </ul>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p><b>Author: Trupti Lokhande</b> |  Eastern Michigan University</p>
+                    <p>This is a story map of tourist places in Bali and Gili islands in Indonesia.
+                      There are so many to mention but a few  famous spots are included in this story map.
+                      It can be considered as a spatial tour blog.</p>
+                    <p style="text-align: left !important;">The story map is created using reference materials available at
+                      <a href="https://github.com/jakobzhao/storymap/" target="_blank">
+                        https://github.com/jakobzhao/storymap</a> provided by Bo Zhao.</p>
+                    <p>The favicon image is created using <a href="https://favicon.io/favicon-generator/" target="_blank">favicon.io</a>.</p>
+                    <p style="margin:0"> Libraries/Stylesheets used:</p>
+                    <ul >
+                      <li>jQuery</li>
+                      <li>Leaflet 1.4</li>
+                      <li>Leaflet-ajax</li>
+                      <li>Storymap 2.5</li>
+                      <li>Bootstrap</li>
+                      <li>Google Material Icon</li>
+                      <li>Font Awesome</li>
+                    </ul>
+                    <p style="margin:0"> Features included:</p>
+                    <ul >
+                      <li>Scenes with Fullscreen Image and Video</li>
+                      <li>Navigation Bar</li>
+                      <li>Tile Layers</li>
+                      <li>GeoJson Layers</li>
+                      <li>Legend</li>
+                      <li>Scale Bar</li>
+                      <li>Favicon image</li>
+                      <li>Social Media Button </li>
+                      <li>Info Page Button</li>
+                    </ul>
+                    <p>The story map is created in partial fulfilment of the requirements for the coursework GEOG 678 Geovisualization: Web Mapping.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+</div>
+
+<script type="text/javascript">
+    // Create Legend Contents in html format
+    var country_legend = '<i style="background: yellow; opacity: 0.5"></i><p><b>Provinces of Indonesia</b></p>';
+
+    var layers = {
+        layer1: {
+            layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')
+        },
+        layer2: {
+            layer: L.geoJson.ajax('../../assets/indo.geojson', {
+                color: 'yellow',
+                weight: 1,
+                attribution: 'Indonesia County Boundary 2020 from ArcGIS Portal &copy; esri_dm | World Imagery Base Map &copy; ESRI'
+            }), legend: country_legend
+
+        },
+        layer3: {
+            layer: L.geoJson.ajax('../../assets/islands.geojson', {
+                onEachFeature: function (feature, layer) {
+                  layer.bindPopup(feature.properties.TITLE);
+              },
+              attribution: 'Made by Trupti Lokhande'
+          })
+        },
+        layer4: {
+          layer: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}')
+        },
+        layer5: {
+            layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png')
+        },
+        layer6: {
+          layer: L.geoJson.ajax('../../assets/volcanoes.geojson', {
+              onEachFeature: function (feature, layer) {
+                layer.bindPopup(feature.properties.NAME_1);
+            },
+            attribution: 'Volcanic Mountains, source: ArcGIS\Packages\Volcanoes of the World_2daa99\v10\world2_data0.gdb; ESRI | World Imagery Base Map &copy; ESRI'
+        })
+      },
+      layer7: {
+        layer: L.geoJson.ajax('../../assets/temples.geojson', {
+            onEachFeature: function (feature, layer) {
+              layer.bindPopup(feature.properties.TITLE);
+          }
+        })
+      },
+      layer8: {
+        layer: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        })
+      }
+    };
+
+    var scenes = {
+        overview: {lat: -2.133333,  lng: 106.116667, zoom: 1, layers: [], name: "Home Page"},
+        scene1: {lat: -2.133333,  lng: 106.116667, zoom: 5, layers: [layers.layer1, layers.layer2], name: "Indonesia"},
+        scene2: {lat: -8.4065689, lng: 114.7, zoom: 10, layers: [layers.layer4, layers.layer3], name: "Bali"},
+        scene3: {lat: -8.3527574, lng: 116.0329698, zoom: 14, layers: [layers.layer1, layers.layer3], name: "Gili"},
+        scene4: {lat: -8.4, lng: 115.29, zoom: 10, layers: [layers.layer8, layers.layer6], name: "Adventures"},
+        scene6: {lat: -8.621213, lng: 115.086807, zoom: 18, layers: [layers.layer8,layers.layer7], name: "Tanah Lot"},
+        scene7: {lat: -8.8293566, lng: 115.0840751, zoom: 18, layers: [layers.layer8,layers.layer7], name: "Uluwatu Temple"},
+        scene8: {lat: -8.3676117, lng: 115.538429, zoom: 12, layers: [layers.layer8,layers.layer7], name: "Lempuyang Temple"},
+        end: {lat: -8.23, lng: 115.29, zoom: 12, layers: [], name: "Thank You"}
+    };
+
+
+
+    $('#storymap').storymap({
+        scenes: scenes,
+        baselayer: layers.layer3,
+        navbar: true,
+        legend: true,
+        loader: false,
+        flyto: true,
+        scalebar: true,
+        scrolldown: true,
+        progressline: true,
+        navwidget: true,
+        createMap: function () {
+            var map = L.map($(".storymap-map")[0], {
+              zoomControl: false
+            }).setView([44, -84.5], 5);
+            basemap = this.baselayer.layer.addTo(map);
+
+            return map;
+        }
+
+    });
+
+
+</script>
+</body>
+</html>
