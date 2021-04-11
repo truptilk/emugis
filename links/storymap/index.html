@@ -280,7 +280,7 @@
         scene6: {lat: -8.621213, lng: 115.086807, zoom: 18, layers: [layers.layer8,layers.layer7], name: "Tanah Lot"},
         scene7: {lat: -8.8293566, lng: 115.0840751, zoom: 18, layers: [layers.layer8,layers.layer7], name: "Uluwatu Temple"},
         scene8: {lat: -8.3676117, lng: 115.538429, zoom: 12, layers: [layers.layer8,layers.layer7], name: "Lempuyang Temple"},
-        end: {lat: -8.23, lng: 115.29, zoom: 12, layers: [], name: "Thank You"}
+        end: {name: "Thank You"}
     };
 
 
@@ -299,7 +299,7 @@
         createMap: function () {
             var map = L.map($(".storymap-map")[0], {
               zoomControl: false
-            }).setView([44, -84.5], 5);
+            }).setView([-2.133333, 106.116667], 2);
             basemap = this.baselayer.layer.addTo(map);
 
             return map;
