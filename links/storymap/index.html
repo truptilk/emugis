@@ -226,13 +226,15 @@
 
     var layers = {
         layer1: {
-            layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')
+            layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+              attribution: 'Base Map &copy; ESRI'
+            })
         },
         layer2: {
             layer: L.geoJson.ajax('assets/indo.geojson', {
                 color: 'yellow',
                 weight: 1,
-                attribution: 'Indonesia County Boundary 2020 from ArcGIS Portal &copy; esri_dm | World Imagery Base Map &copy; ESRI'
+                attribution: 'Indonesia County Boundary 2020 from ArcGIS Portal &copy; esri_dm'
             }), legend: country_legend
 
         },
@@ -245,7 +247,9 @@
           })
         },
         layer4: {
-          layer: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}')
+          layer: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Base Map &copy; ESRI'
+          })
         },
         layer5: {
             layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png')
@@ -255,7 +259,7 @@
               onEachFeature: function (feature, layer) {
                 layer.bindPopup(feature.properties.NAME_1);
             },
-            attribution: 'Volcanic Mountains, source: ArcGIS\Packages\Volcanoes of the World_2daa99\v10\world2_data0.gdb; ESRI | World Imagery Base Map &copy; ESRI'
+            attribution: 'Volcanic Mountains | ArcGIS Portal | Volcanoes of the World | Data &copy; ESRI'
         })
       },
       layer7: {
@@ -267,7 +271,7 @@
       },
       layer8: {
         layer: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
         })
       }
     };
@@ -275,7 +279,7 @@
     var scenes = {
         overview: {name: "Home Page"},
         scene1: {lat: -2.133333,  lng: 106.116667, zoom: 5, layers: [layers.layer1, layers.layer2], name: "Indonesia"},
-        scene2: {lat: -8.4065689, lng: 114.7, zoom: 10, layers: [layers.layer4, layers.layer3], name: "Bali"},
+        scene2: {lat: -8.4065689, lng: 114.7, zoom: 10, layers: [layers.layer3, layers.layer4], name: "Bali"},
         scene3: {lat: -8.3527574, lng: 116.0329698, zoom: 14, layers: [layers.layer1, layers.layer3], name: "Gili"},
         scene4: {lat: -8.4, lng: 115.29, zoom: 10, layers: [layers.layer8, layers.layer6], name: "Adventures"},
         scene6: {lat: -8.621213, lng: 115.086807, zoom: 18, layers: [layers.layer8,layers.layer7], name: "Tanah Lot"},
@@ -291,7 +295,7 @@
         baselayer: layers.layer3,
         navbar: true,
         legend: true,
-        loader: false,
+        loader: true,
         flyto: true,
         scalebar: true,
         scrolldown: true,
