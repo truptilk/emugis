@@ -1,0 +1,12 @@
+feature.properties Description
+DP0010001  Total Population
+Population
+DP0080003	  White
+DP0080004	  Black or African American
+DP0080005	  American Indian and Alaska Native
+DP0080006	  Asian:
+DP0080007	  Asian Indian
+DP0100001	  Total Hispanic/Latino
+DP0130001   Total Households
+DP0180001	  Total housing units
+DP0180003	 Vacant housing units
