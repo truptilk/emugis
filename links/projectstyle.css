@@ -45,14 +45,14 @@ body {
 
 .embed-container {
   position: relative;
-  padding-bottom: 80%;
+  padding-bottom: 65%;
 }
 .embed-container iframe, .embed-container object, .embed-container iframe{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 70%;
     border-color: orange;
     border-width: 1px;
   }
