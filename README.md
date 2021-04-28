@@ -1,2 +1,2 @@
 # emugis
- GIS coursework
+ GEOG 678 GIS coursework
