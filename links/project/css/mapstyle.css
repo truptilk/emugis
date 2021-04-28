@@ -1,0 +1,60 @@
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#mapid {
+  position: relative;
+  width: 100%;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 0;
+  background: Orange;
+  color: Black;
+  font-size: 20px;
+}
+.leaflet-popup-content {
+  margin: 5px;
+}
+.leaflet-popup-tip {
+  background: orange;
+}
+
+#overlay {
+  position: absolute;
+  z-index: 1000;
+  background: rgba(255,255,255,0.7);
+  padding: 10px;
+  right: 0;
+  bottom: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px grey;
+}
+#overlay h2, #slide-in h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+#slide-in {
+  padding: 10px;
+  position: absolute;
+  width: 250px;
+  z-index: 1000;
+  background: white;
+  margin-left: 0px;
+  transition: 0.5s;
+}
+*#slide-in.in {
+  margin-left: -270px;
+}

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Explorer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+		<link rel="stylesheet" href="css/mapstyle.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+		<script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js" integrity="sha512-C7BBF9irt5R7hqbUm2uxtODlUVs+IsNu2UULGuZN7gM+k/mmeG4xvIEac01BtQa4YIkUpp23zZC4wIwuXaPMQA==" crossorigin=""></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+</head>
+<body>
+	<div id="navbar">
+	  <a href="../projecthomepage.html"><i class="fas fa-home"></i></a>
+		<a href="demo.html">Explorer</a>
+		<a href="overlay.html">Thematic Maps</a>
+		<a href="heatmap/heatmap.html">Heatmaps</a>
+		<a href="clusters.html">Clusters</a>
+		<a id="advanced" style="float: right;">Toggle Sidebar</a>
+	</div>
+
+	<div id="slide-in">
+		<button id="advanced" style="float: right;">Close</button>
+		<h2>Zoom to</h2>
+		<p>*Map does not show all cities in southeast Michigan.</p>
+		<select id="city-select">
+			<option value="">(no city selected)</option>
+		</select>
+		<div id="city-information"></div>
+	</div>
+
+
+	<div id="overlay">
+		<div id="city-information2"></div>
+	</div>
+
+	<div id="mapid" style="width:100%;"></div>
+
+	<script type= "text/javascript" src="js/mapinfo.js"></script>
+
+</body>
+</html>
