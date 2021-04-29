@@ -1,4 +1,4 @@
-
+body {margin: 0;}
 #navbar {
   overflow: hidden;
   background-color: #333;
@@ -16,6 +16,7 @@
 #mapid {
   position: relative;
   width: 100%;
+  margin: 0
 }
 .leaflet-popup-content-wrapper {
   border-radius: 0;
